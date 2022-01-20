@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* alt키 + 방향키 누르면 줄 순서 바꿀 수 있음 */
+
 .container {
   width: 1000px;
   margin: 0 auto;
@@ -80,4 +82,74 @@ h1 {
 
 .tbl_04 th {
   background-color: #efefef;
+}
+
+/* 테이블 05 */
+.tbl_05 th,
+.tbl_05 td {
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.tbl_05 td:last-child,
+.tbl_05 th:last-child {
+  /* 맨 오른쪽 마지막 td를 말함 마지막 세로줄 중간에 있는 2~n번째는 nth child */
+  border-right: none;
+}
+
+.tbl_05 th {
+  background-color: #efefef;
+}
+
+/* 테이블 06 */
+.tbl_06 th,
+.tbl_06 td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 달력 */
+.cal {
+  width: 360px;
+  font-size: 12px;
+  color: #333;
+  border-top: 2px solid #000;
+}
+
+.cal td,
+.cal th {
+  border: 1px solid #efefef;
+  padding: 12px;
+}
+
+.cal th {
+  background-color: #e1f7cd;
+  color: #111;
+}
+
+.cal td {
+  text-align: right;
+  cursor: pointer;
+}
+
+.cal td:hover {
+  background-color: #efefef;
+}
+
+.cal td:last-child,
+.cal th:last-child {
+  color: #4b7bec;
+}
+
+.cal td:first-child,
+.cal th:first-child {
+  color: #ea2027;
+}
+
+.cal .red {
+  color: red;
+  font-weight: bold;
 }
