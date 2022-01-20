@@ -65,3 +65,19 @@ h1 {
   color: #fff;
   padding: 20px;
 }
+
+/* 테이블 04 */
+.tbl_04 {
+  border-top: 1px solid #ccc;
+}
+
+.tbl_04 th,
+.tbl_04 td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.tbl_04 th {
+  background-color: #efefef;
+}
