@@ -95,7 +95,7 @@ h1 {
 
 .tbl_05 td:last-child,
 .tbl_05 th:last-child {
-  /* 맨 오른쪽 마지막 td를 말함 마지막 세로줄 중간에 있는 2~n번째는 nth child */
+  /* 맨 오른쪽 마지막 td를 말함 마지막 세로줄 중간에 있는 n번째는 nth child */
   border-right: none;
 }
 
@@ -152,4 +152,19 @@ h1 {
 .cal .red {
   color: red;
   font-weight: bold;
+}
+
+/* 테이블 07 */
+.tbl_07 th,
+.tbl_07 td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tbl_07 th {
+  background-color: #efefef;
+}
+
+.tbl_07 td:nth-child(2) {
+  text-align: center;
 }
