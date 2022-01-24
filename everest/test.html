@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      .container {
+        background-color: aqua;
+        height: 800px;
+        position: relative; /* circle에 있는 포지션 앱솔루트에 영향을 준다 */
+      }
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        margin: 0 auto;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50px;
+        position: absolute;
+        /* relative와 관계를 맺지만 relative가 없으면 브라우저와 관계를 맺는다 */
+        bottom: 0px;
+        right: 0px;
+        /* relative의 아래에서 50, 오른쪽에서 50 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

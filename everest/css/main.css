@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../images/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 46px;
+}
+
+.sign {
+  margin-left: 70px;
+}
+
+.sign img {
+  width: 16px;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+}
+
+.menu a {
+  background-color: transparent;
+  padding: 6px 20px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  /* 방향 세로로 */
+  transform: translateY(-50%);
+  gap: 40px;
+  /* 40px 자동으로 떨어뜨림 */
+}
+
+.social a img {
+  width: 24px;
+}
+
+.main_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main_text h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+}
+
+.main_text p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer {
+  /* position: absolute; */
+  /* 앱솔루트를 하고나면 넓이가 사라짐 */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.footer a img {
+  width: 24px;
+}
