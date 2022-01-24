@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+i {
+  font-size: 24px;
+}
+
 body {
   color: white;
   font-family: "Nanum Gothic", sans-serif;
@@ -60,10 +64,17 @@ body {
   padding: 6px 20px;
   border-radius: 40px;
   border: 1px solid transparent;
+  transition: all 0.6s;
+  /* 부드럽게 트렌지션 된다는 뜻 */
 }
 
 .menu a:hover {
   border: 1px solid #fff;
+}
+
+.menu a.on {
+  background-color: #fff;
+  color: #000;
 }
 
 .social {
@@ -78,8 +89,14 @@ body {
   /* 40px 자동으로 떨어뜨림 */
 }
 
-.social a img {
-  width: 24px;
+.social i {
+  color: #9fa6ff;
+}
+
+.social a:hover i {
+  /* 소셜의 a에 호버가 일어나면 i의 색이 #fff가 되겠다 */
+  color: #fff;
+  transition: all 0.6s;
 }
 
 .main_text {
@@ -112,6 +129,12 @@ body {
   padding: 40px;
 }
 
-.footer a img {
-  width: 24px;
+.footer i {
+  color: #9fa6ff;
+}
+
+.footer a:hover i {
+  color: #fff;
+  transition: all 0.6s;
+  /* 지금은 all이라고 하지만 사실은 all 자리에 변화되는 것을 작성 예를들면 color */
 }
