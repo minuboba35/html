@@ -1,61 +1,60 @@
-*{
-    /* 별표는 전체를 설정 할 수 있음 */
-    margin: 0;      /* 바깥쪽으로 나오는 간격 */
-    padding: 0;     /* 안쪽으로 들어가는 간격 */
-    box-sizing: border-box;
+* {
+  /* 별표는 전체를 설정 할 수 있음 */
+  margin: 0; /* 바깥쪽으로 나오는 간격 */
+  padding: 0; /* 안쪽으로 들어가는 간격 */
+  box-sizing: border-box;
 }
 
-body{
-    color: #111;
+body {
+  color: #111;
 }
 
 /* 클래스 일때는 .~~로 하고 그냥 html속 있는 것은 .없이 하면된다 */
-a{
-    color: inherit;
-    /* 모든 a 태그의 컬러를 상속받겠다는 의미 inherit */
-    text-decoration: none;     /* 텍스트 데코레이션을 빼겠다 */
+a {
+  color: inherit;
+  /* 모든 a 태그의 컬러를 상속받겠다는 의미 inherit */
+  text-decoration: none; /* 텍스트 데코레이션을 빼겠다 */
 }
 
-.title{
-    text-align: center; /* 텍스트를 센터로 정렬하겠다 */
-    padding: 60px;
+.title {
+  text-align: center; /* 텍스트를 센터로 정렬하겠다 */
+  padding: 60px;
 }
 
-a:hover{
-    
-    text-decoration: underline;   /* 마우스가 지정한 곳에 올라가는 이벤트가 올라가면 언더라인을 띄우겠다 */
-    color: #00a8ff;     /* 마우스 커서가 올라가면 색을 이렇게 비추겠다 */
+a:hover {
+  text-decoration: underline; /* 마우스가 지정한 곳에 올라가는 이벤트가 올라가면 언더라인을 띄우겠다 */
+  color: #00a8ff; /* 마우스 커서가 올라가면 색을 이렇게 비추겠다 */
 }
 
 /* 블록일 때 margin 설정으로 중앙으로 보낸다 */
 .card {
-    width: 1100px;
-    margin: 0 auto;  /* ul을 중앙으로 */
-    list-style: none;   /* 리스트 스타일을 안하겠다는 의미 */
-    display: flex;  /* 유연하게 하겠다 */
-    justify-content: space-between;    /* 간격 자동 정렬 */
+  width: 1100px;
+  margin: 0 auto; /* ul을 중앙으로 */
+  list-style: none; /* 리스트 스타일을 안하겠다는 의미 */
+  display: flex; /* 유연하게 하겠다 */
+  justify-content: space-between; /* 간격 자동 정렬 */
 }
 
-.item{
-    /* display: inline-block;  인라인의 속성을 가진 블록인데 플렉스를 하는 순간 이게 필요없어짐 */
+.item {
+  /* display: inline-block;  인라인의 속성을 가진 블록인데 플렉스를 하는 순간 이게 필요없어짐 */
 
-    width: 254px;
+  width: 254px;
 }
 
 /* 인라인요소 / 아래위로 안먹힌다 padding / 블록으로 만들어줘야함 */
 .item a {
-    font-weight: bold;
-    display: inline-block;  /* 인라인 요소이지만 블록으로 만들어줌 */
-    padding: 10px 0 8px;
+  font-weight: bold;
+  display: inline-block; /* 인라인 요소이지만 블록으로 만들어줌 */
+  padding: 10px 0 8px;
 }
 
 /* 블록요소 */
-.item p{
-    font-size: 12px;
-    color: #666;
+.item p {
+  font-size: 12px;
+  color: #666;
 }
 
 .photo img {
-    width: 254px;
-    height: 156px;
+  width: 254px;
+  height: 156px;
 }
