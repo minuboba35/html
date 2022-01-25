@@ -10,11 +10,18 @@ body {
 }
 
 .heather {
-  width: 100%;
+  width: 80%;
+  height: 100px;
   margin: 0 auto;
+  background-color: #ccc;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+}
+
+.logo {
+  margin-right: auto;
+  padding: 30px;
+  background-color: ;
 }
 
 .logo img {
@@ -22,9 +29,9 @@ body {
 }
 
 ul {
-  width: 100%;
+  width: 80%;
   list-style-type: none;
-  margin: 50px;
+  margin: 0 auto;
   padding: 0;
   background-color: transparent;
 }
@@ -45,6 +52,13 @@ li a {
   text-decoration: none;
 }
 
-.mainimg {
+.main {
   width: 100%;
+  height: 750px;
+  background-image: url(../img/deathnote_banner.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  background-color: red;
+  text-align: center;
 }
